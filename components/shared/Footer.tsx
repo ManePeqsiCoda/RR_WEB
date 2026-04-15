@@ -16,6 +16,7 @@ const QUICK_LINKS: FooterLink[] = [
   { label: 'Servicios', href: '/servicios' },
   { label: 'Contacto', href: '/contacto' },
   { label: 'Paquetes', href: '/#pricing' },
+  { label: 'Portal Corporativo', href: 'https://rr-dash-web.vercel.app/' },
 ]
 
 const TECH_BADGES: TechBadge[] = [
