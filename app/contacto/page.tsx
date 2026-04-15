@@ -77,7 +77,7 @@ export default function ContactoPage() {
       </div>
 
       {/* ── COLUMNA DERECHA (7/12) - Formulario ── */}
-      <div className="w-full lg:w-7/12 max-w-2xl w-full">
+      <div className="w-full lg:w-7/12 max-w-2xl">
         <ContactForm />
       </div>
 
