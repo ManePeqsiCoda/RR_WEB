@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
+import QuotePaymentModal from './QuotePaymentModal'
 
 /** Navigation link item definition */
 interface NavLink {
@@ -24,6 +25,7 @@ const NAV_LINKS: NavLink[] = [
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -89,7 +91,18 @@ export default function Navbar() {
         </ul>
 
         {/* ── CTA DESKTOP ── */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
+          <button
+            onClick={() => setIsQuoteModalOpen(true)}
+            className="
+              text-xs tracking-widest uppercase font-syne font-semibold
+              text-txt-secondary hover:text-accent transition-all duration-300
+              px-4 py-2 hover:bg-white/[0.03] rounded-button
+            "
+          >
+            Pagar Cotización
+          </button>
+          
           <Link
             href="/contacto"
             className="
@@ -159,7 +172,16 @@ export default function Navbar() {
               </li>
             )
           })}
-          <li className="pt-2">
+          <li className="pt-2 flex flex-col gap-3">
+            <button
+              onClick={() => {
+                closeMenu()
+                setIsQuoteModalOpen(true)
+              }}
+              className="btn-secondary w-full justify-center"
+            >
+              Pagar Cotización
+            </button>
             <Link
               href="/contacto"
               onClick={closeMenu}
@@ -172,6 +194,11 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
+      <QuotePaymentModal 
+        isOpen={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)} 
+      />
     </header>
   )
 }

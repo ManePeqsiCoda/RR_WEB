@@ -76,8 +76,9 @@ export default function RootLayout({
     <html
       lang="es"
       className={`${syne.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         <Navbar />
         <main>{children}</main>
         <Footer />
