@@ -4,6 +4,7 @@ import ServiciosGrid from '@/components/home/ServiciosGrid'
 import PricingSection from '@/components/home/PricingSection'
 import MetricsDashboard from '@/components/home/MetricsDashboard'
 import NewsletterSection from '@/components/home/NewsletterSection'
+import WompiSuccessModal from '@/components/shared/WompiSuccessModal'
 
 /**
  * HomePage — Landing principal de RR Aliados.
@@ -28,6 +29,9 @@ export default function HomePage() {
 
       <div className="border-t border-white/5" aria-hidden="true" />
       <NewsletterSection />
+
+      {/* Escucha la redirección exitosa de Wompi */}
+      <WompiSuccessModal />
     </>
   )
 }
