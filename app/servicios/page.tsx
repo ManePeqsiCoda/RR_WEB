@@ -161,7 +161,7 @@ export default function ServiciosPage() {
       {/* Sección Pricing Embebida */}
       <section className="bg-bg-secondary pt-20">
         <div className="max-w-7xl mx-auto px-6 text-center mb-[-40px]">
-          <h2 className="font-syne font-bold text-2xl text-txt-primary">
+          <h2 className="font-outfit font-semibold text-4xl tracking-[-0.02em] text-txt-primary">
             ¿Listo para elegir tu plan?
           </h2>
         </div>
@@ -177,7 +177,7 @@ export default function ServiciosPage() {
             ◆ HABLEMOS
           </span>
           <h2
-            className="font-syne font-bold"
+            className="font-outfit font-bold"
             style={{ fontSize: 'clamp(32px, 4.5vw, 56px)' }}
           >
             Inicia tu <em className="text-accent not-italic">Protocolo</em>
@@ -187,7 +187,7 @@ export default function ServiciosPage() {
           </p>
           <Link
             href="/contacto"
-            className="bg-accent text-bg-primary font-syne font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-button hover:brightness-110 transition-all duration-200"
+            className="bg-accent text-bg-primary font-outfit font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-button hover:brightness-110 transition-all duration-200"
           >
             INICIAR PROTOCOLO <span aria-hidden="true">→</span>
           </Link>

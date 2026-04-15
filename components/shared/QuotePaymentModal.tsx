@@ -180,7 +180,7 @@ export default function QuotePaymentModal({ isOpen, onClose }: QuotePaymentModal
             {view === 'search' && (
               <div className="space-y-6">
                 <div className="space-y-2">
-                  <h2 className="font-syne text-2xl font-bold tracking-tight text-txt-primary">
+                  <h2 className="font-outfit text-2xl font-bold tracking-tight text-txt-primary">
                     Consulta tu Cotización
                   </h2>
                   <p className="text-sm text-txt-secondary leading-relaxed">
@@ -231,7 +231,7 @@ export default function QuotePaymentModal({ isOpen, onClose }: QuotePaymentModal
             {view === 'results' && (
               <div className="space-y-6">
                 <div className="space-y-2">
-                  <h2 className="font-syne text-2xl font-bold tracking-tight text-txt-primary">
+                  <h2 className="font-outfit text-2xl font-bold tracking-tight text-txt-primary">
                     Resumen de Pago
                   </h2>
                   <p className="text-xs text-txt-secondary uppercase tracking-[0.2em]">Datos verificados</p>
@@ -259,7 +259,7 @@ export default function QuotePaymentModal({ isOpen, onClose }: QuotePaymentModal
                   <div className="pt-4 border-t border-white/5">
                     <p className="text-[10px] uppercase tracking-widest text-txt-faint font-bold leading-none mb-2">Total a Cancelar</p>
                     <div className="flex items-baseline gap-2">
-                      <p className="text-3xl font-syne font-black text-txt-primary">
+                      <p className="text-3xl font-outfit font-black text-txt-primary">
                         ${((foundQuote?.amountInCents || 0) / 100).toLocaleString('es-CO')}
                       </p>
                       <p className="text-xs font-mono text-txt-secondary">{foundQuote?.currency}</p>
@@ -272,7 +272,7 @@ export default function QuotePaymentModal({ isOpen, onClose }: QuotePaymentModal
                     onClick={handlePayment}
                     disabled={isPaymentLoading}
                     className="
-                      w-full py-4 rounded-button font-syne font-bold text-xs tracking-[0.2em] uppercase
+                      w-full py-4 rounded-button font-outfit font-bold text-xs tracking-[0.2em] uppercase
                       bg-[#4A9EFF] text-bg-primary shadow-[0_0_24px_rgba(74,158,255,0.3)]
                       hover:shadow-[0_0_35px_rgba(74,158,255,0.5)] hover:brightness-110
                       active:scale-[0.98] transition-all duration-300

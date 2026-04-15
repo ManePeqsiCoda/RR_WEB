@@ -240,7 +240,7 @@ export default function ContactForm() {
             className="text-center py-20 bg-bg-card border-gold rounded-card"
           >
             <div className="text-6xl text-success mb-6">✓</div>
-            <h3 className="font-syne font-bold text-3xl mb-2 text-txt-primary">Protocolo Iniciado</h3>
+            <h3 className="font-outfit font-bold text-3xl mb-2 text-txt-primary">Protocolo Iniciado</h3>
             <p className="text-txt-secondary max-w-sm mx-auto">
               Tu solicitud ha sido encriptada y enviada con éxito.
               Nos contactaremos en menos de 24 horas.

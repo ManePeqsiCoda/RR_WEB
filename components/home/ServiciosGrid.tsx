@@ -62,7 +62,7 @@ export default function ServiciosGrid() {
           <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-accent">
             ◆ PROTOCOLO ESTRATÉGICO
           </p>
-          <h2 className="font-syne font-bold" style={{ fontSize: 'clamp(28px, 4vw, 42px)' }}>
+          <h2 className="font-outfit font-semibold tracking-[-0.02em]" style={{ fontSize: 'clamp(28px, 4vw, 42px)' }}>
             Nuestros{' '}
             <em className="text-accent not-italic">Servicios</em>
           </h2>
@@ -97,7 +97,7 @@ export default function ServiciosGrid() {
               >
                 {svc.icon}
               </div>
-              <h3 className="font-syne font-semibold text-txt-primary text-base mb-2">
+              <h3 className="font-outfit font-medium text-xl tracking-[-0.01em] text-txt-primary mb-2">
                 {svc.title}
               </h3>
               <p className="text-txt-secondary text-sm leading-relaxed">

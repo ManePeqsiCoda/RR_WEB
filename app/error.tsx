@@ -25,7 +25,7 @@ export default function Error({
         </span>
         
         <div className="flex flex-col gap-4">
-          <h2 className="font-syne font-bold text-3xl text-txt-primary">
+          <h2 className="font-outfit font-bold text-3xl text-txt-primary">
             Error en el <em className="text-accent not-italic">Sistema</em>
           </h2>
           <p className="text-txt-secondary text-[15px] leading-relaxed">
@@ -37,14 +37,14 @@ export default function Error({
         <div className="flex flex-col sm:flex-row gap-4 w-full">
           <button
             onClick={() => reset()}
-            className="flex-1 bg-accent text-bg-primary font-syne font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-button hover:brightness-110 active:scale-[0.98] transition-all"
+            className="flex-1 bg-accent text-bg-primary font-outfit font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-button hover:brightness-110 active:scale-[0.98] transition-all"
           >
             REINTENTAR ACCESO
           </button>
           
           <Link
             href="/"
-            className="flex-1 border border-white/10 text-txt-primary font-syne font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-button hover:border-accent/40 transition-all"
+            className="flex-1 border border-white/10 text-txt-primary font-outfit font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-button hover:border-accent/40 transition-all"
           >
             VOLVER AL INICIO
           </Link>

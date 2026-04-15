@@ -18,7 +18,7 @@ html {
 body {
   background-color: #0A0A0F;
   color: #E8E6D8;
-  font-family: var(--font-syne), sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -83,7 +83,7 @@ body {
 .btn-primary {
   background: #CFAE3A;
   color: #0A0A0F;
-  font-family: var(--font-syne), sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.08em;
@@ -111,7 +111,7 @@ body {
 .btn-secondary {
   background: transparent;
   color: #E8E6D8;
-  font-family: var(--font-syne), sans-serif;
+  font-family: var(--font-outfit), sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.08em;

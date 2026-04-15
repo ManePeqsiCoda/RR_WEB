@@ -52,7 +52,7 @@ export default function Footer() {
             >
               RR ALIADOS
             </Link>
-            <p className="text-txt-primary font-syne font-semibold text-base leading-snug">
+            <p className="text-txt-primary font-outfit font-semibold text-base leading-snug">
               Forjando el Futuro de la<br />Soberanía Digital
             </p>
             <p className="text-txt-secondary text-sm leading-relaxed max-w-xs">

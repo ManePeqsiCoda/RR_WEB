@@ -66,8 +66,8 @@ export default function HeroSection() {
 
           {/* Headline */}
           <h1
-            className="font-syne font-extrabold tracking-tight leading-[1.05]"
-            style={{ fontSize: 'clamp(42px, 7vw, 80px)' }}
+            className="font-outfit font-bold tracking-[-0.03em] leading-[1.08]"
+            style={{ fontSize: 'clamp(38px, 7vw, 82px)' }}
           >
             <motion.span
               variants={fadeInUp}
@@ -127,14 +127,14 @@ export default function HeroSection() {
             <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}>
               <Link
                 href="/contacto"
-                className="bg-accent text-bg-primary font-syne font-bold text-xs tracking-widest uppercase px-7 py-3.5 rounded-button hover:brightness-110 transition-all duration-200 inline-flex items-center gap-2"
+                className="bg-accent text-bg-primary font-outfit font-bold text-xs tracking-widest uppercase px-7 py-3.5 rounded-button hover:brightness-110 transition-all duration-200 inline-flex items-center gap-2"
               >
                 INICIAR PROTOCOLO <span aria-hidden="true">→</span>
               </Link>
             </motion.div>
             <Link
               href="#trayectoria"
-              className="border border-white/15 text-txt-secondary hover:text-txt-primary hover:border-white/30 font-syne text-xs tracking-widest uppercase px-7 py-3.5 rounded-button transition-all duration-200"
+              className="border border-white/15 text-txt-secondary hover:text-txt-primary hover:border-white/30 font-outfit text-xs tracking-widest uppercase px-7 py-3.5 rounded-button transition-all duration-200"
             >
               QUIÉNES SOMOS
             </Link>
@@ -148,7 +148,7 @@ export default function HeroSection() {
               { value: '$47.2M', label: 'COP gestionados' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="font-syne font-bold text-xl text-txt-primary">
+                <p className="font-outfit font-bold text-xl text-txt-primary">
                   {stat.value}
                 </p>
                 <p className="font-mono text-[10px] uppercase tracking-widest text-txt-faint mt-0.5">

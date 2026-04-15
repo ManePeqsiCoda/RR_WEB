@@ -104,7 +104,7 @@ function PricingCard({ plan }: { plan: Plan }) {
 
       {/* Nombre */}
       <h3
-        className="font-syne font-semibold text-txt-primary text-xl"
+        className="font-outfit font-bold text-txt-primary text-2xl tracking-[-0.01em]"
         style={{ transform: 'translateZ(25px)' }}
       >
         {plan.name}
@@ -113,7 +113,7 @@ function PricingCard({ plan }: { plan: Plan }) {
       {/* Precio */}
       <div style={{ transform: 'translateZ(30px)' }}>
         <span
-          className={`font-syne font-extrabold text-3xl ${
+          className={`font-outfit font-extrabold text-3xl ${
             plan.featured ? 'text-accent' : 'text-txt-primary'
           }`}
         >
@@ -149,7 +149,7 @@ function PricingCard({ plan }: { plan: Plan }) {
       <Link
         href="/contacto"
         className={`
-          mt-2 w-full text-center font-syne font-bold text-xs
+          mt-2 w-full text-center font-outfit font-bold text-xs
           tracking-widest uppercase px-6 py-3.5 rounded-button
           transition-all duration-200 inline-block
           ${
@@ -184,7 +184,7 @@ export default function PricingSection() {
           <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-accent">
             ◆ PAQUETES INTEGRALES
           </p>
-          <h2 className="font-syne font-bold" style={{ fontSize: 'clamp(28px, 4vw, 42px)' }}>
+          <h2 className="font-outfit font-semibold tracking-[-0.02em]" style={{ fontSize: 'clamp(28px, 4vw, 42px)' }}>
             Paquetes{' '}
             <em className="text-accent not-italic">Integrales</em>
           </h2>

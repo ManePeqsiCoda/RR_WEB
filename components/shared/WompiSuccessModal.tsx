@@ -76,7 +76,7 @@ function ModalContent() {
               </svg>
             </motion.div>
 
-            <h2 className="font-syne text-2xl font-bold tracking-tight text-white mb-2">
+            <h2 className="font-outfit text-2xl font-bold tracking-tight text-white mb-2">
               Pago Exitoso
             </h2>
             <p className="text-sm text-txt-secondary leading-relaxed mb-6">

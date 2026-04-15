@@ -27,8 +27,8 @@ export default function ContactoPage() {
             ◆ HABLEMOS
           </span>
           <h1
-            className="font-syne font-extrabold tracking-tight leading-[1.1] mb-6"
-            style={{ fontSize: 'clamp(40px, 5vw, 64px)' }}
+            className="font-outfit font-bold tracking-[-0.03em] leading-[1.08] mb-6"
+            style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
           >
             Inicia tu <span className="text-gradient-gold">Protocolo</span>
           </h1>
@@ -56,7 +56,7 @@ export default function ContactoPage() {
           {/* Glow bg */}
           <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-accent/5 rounded-full blur-2xl pointer-events-none" />
           
-          <h3 className="font-syne font-semibold text-txt-primary flex items-center gap-2">
+          <h3 className="font-outfit font-semibold text-txt-primary flex items-center gap-2">
             <span className="text-accent">◆</span> Contacto Directo
           </h3>
           <div className="flex flex-col gap-2">

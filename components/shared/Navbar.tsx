@@ -72,7 +72,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`
                     transition-colors duration-200
-                    text-sm tracking-wider uppercase font-syne
+                    text-sm tracking-wider uppercase font-outfit
                     ${isActive ? 'text-accent font-semibold' : 'text-txt-secondary hover:text-txt-primary'}
                   `}
                 >
@@ -95,7 +95,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsQuoteModalOpen(true)}
             className="
-              text-xs tracking-widest uppercase font-syne font-semibold
+              text-xs tracking-widest uppercase font-outfit font-semibold
               text-txt-secondary hover:text-accent transition-all duration-300
               px-4 py-2 hover:bg-white/[0.03] rounded-button
             "
@@ -106,7 +106,7 @@ export default function Navbar() {
           <Link
             href="/contacto"
             className="
-              bg-accent text-bg-primary font-syne font-bold
+              bg-accent text-bg-primary font-outfit font-bold
               text-xs tracking-widest uppercase px-5 py-2.5 rounded-button
               hover:brightness-110 transition-all duration-200
               inline-flex items-center gap-1.5
@@ -163,7 +163,7 @@ export default function Navbar() {
                   onClick={closeMenu}
                   className={`
                     block transition-colors duration-200
-                    text-sm tracking-wider uppercase font-syne py-2
+                    text-sm tracking-wider uppercase font-outfit py-2
                     ${isActive ? 'text-accent font-semibold' : 'text-txt-secondary hover:text-txt-primary'}
                   `}
                 >

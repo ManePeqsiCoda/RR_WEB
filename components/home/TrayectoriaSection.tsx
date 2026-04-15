@@ -29,7 +29,7 @@ export default function TrayectoriaSection() {
           <div className="lg:col-span-5 flex flex-col gap-6">
 
             {/* Headline */}
-            <h2 className="font-syne font-bold text-4xl leading-tight">
+            <h2 className="font-outfit font-semibold text-4xl tracking-[-0.02em] leading-tight">
               Forjando el
               <br />
               Futuro de la
@@ -61,7 +61,7 @@ export default function TrayectoriaSection() {
                   key={m.label}
                   className={`flex flex-col gap-1 ${i > 0 ? 'border-l border-white/[0.08] pl-4' : ''}`}
                 >
-                  <span className="font-syne font-extrabold text-3xl text-txt-primary">
+                  <span className="font-outfit font-extrabold text-3xl text-txt-primary">
                     <AnimatedCounter target={m.value} prefix={m.prefix} suffix={m.suffix} />
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-widest text-txt-faint">
@@ -133,7 +133,7 @@ export default function TrayectoriaSection() {
               </p>
 
               {/* Botón decorativo */}
-              <button className="self-start border border-white/15 text-txt-secondary font-syne text-[11px] tracking-widest uppercase px-4 py-2 rounded-button hover:border-accent/30 hover:text-txt-primary transition-all duration-200">
+              <button className="self-start border border-white/15 text-txt-secondary font-outfit text-[11px] tracking-widest uppercase px-4 py-2 rounded-button hover:border-accent/30 hover:text-txt-primary transition-all duration-200">
                 ARQUITECTURA ACTIVA →
               </button>
             </div>

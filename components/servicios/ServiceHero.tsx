@@ -35,7 +35,7 @@ export default function ServiceHero() {
         <motion.h1
           variants={fadeInUp}
           custom={1}
-          className="font-syne font-extrabold tracking-tight leading-[1.1]"
+          className="font-outfit font-bold tracking-[-0.03em] leading-[1.08]"
           style={{ fontSize: 'clamp(40px, 5vw, 64px)' }}
         >
           <span className="text-txt-primary block">Nuestros</span>

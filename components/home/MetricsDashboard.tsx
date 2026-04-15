@@ -87,7 +87,7 @@ export default function MetricsDashboard() {
             ◆ MÉTRICAS EN TIEMPO REAL
           </p>
           <h2
-            className="font-syne font-bold"
+            className="font-outfit font-bold"
             style={{ fontSize: 'clamp(28px, 4vw, 42px)' }}
           >
             Panel{' '}
@@ -105,7 +105,7 @@ export default function MetricsDashboard() {
               <span className={`${m.iconColor} text-base mb-1`} aria-hidden="true">
                 {m.icon}
               </span>
-              <span className="font-syne font-bold text-2xl text-txt-primary">
+              <span className="font-outfit font-bold text-2xl text-txt-primary">
                 <AnimatedCounter
                   target={m.value}
                   prefix={m.prefix}
@@ -129,7 +129,7 @@ export default function MetricsDashboard() {
           {/* Chart header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
             <div>
-              <h3 className="font-syne font-semibold text-txt-primary text-sm">
+              <h3 className="font-outfit font-semibold text-txt-primary text-sm">
                 Leads Generados Totales
               </h3>
               <p className="font-mono text-[10px] text-txt-faint mt-0.5">

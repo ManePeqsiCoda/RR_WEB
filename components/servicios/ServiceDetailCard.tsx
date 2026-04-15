@@ -51,7 +51,7 @@ export default function ServiceDetailCard({
           <span className="font-mono text-[10px] text-txt-faint uppercase tracking-widest mb-3 block">
             {id}
           </span>
-          <h2 className="font-syne font-bold text-3xl md:text-4xl leading-tight">
+          <h2 className="font-outfit font-semibold text-3xl md:text-4xl tracking-[-0.02em] leading-tight">
             {title}
           </h2>
           <p className="text-txt-secondary text-base leading-relaxed mt-4 max-w-xl">
@@ -157,7 +157,7 @@ export default function ServiceDetailCard({
             >
               {icon}
             </motion.span>
-            <h4 className="font-syne font-semibold text-txt-primary text-xl max-w-[200px]">
+            <h4 className="font-outfit font-medium text-xl tracking-[-0.01em] text-txt-primary max-w-[200px]">
               {title}
             </h4>
 

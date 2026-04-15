@@ -120,7 +120,7 @@ export default function NewsletterPopup() {
 
             {/* Content */}
             <div className="text-center mb-8">
-              <h3 className="font-syne font-bold text-[28px] text-txt-primary mb-3 leading-tight">
+              <h3 className="font-outfit font-bold text-[28px] text-txt-primary mb-3 leading-tight">
                 Únete al Protocolo
               </h3>
               <p className="text-txt-secondary text-[15px] leading-relaxed">
@@ -156,7 +156,7 @@ export default function NewsletterPopup() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-accent text-bg-primary font-syne font-bold text-xs tracking-[0.1em] uppercase py-4 rounded-xl hover:brightness-110 active:scale-[0.98] transition-all disabled:opacity-50"
+                  className="w-full bg-accent text-bg-primary font-outfit font-bold text-xs tracking-[0.1em] uppercase py-4 rounded-xl hover:brightness-110 active:scale-[0.98] transition-all disabled:opacity-50"
                 >
                   {isSubmitting ? 'PROCESANDO...' : 'ACTIVAR PROTOCOLO'}
                 </button>

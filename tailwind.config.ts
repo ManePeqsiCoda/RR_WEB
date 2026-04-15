@@ -36,7 +36,7 @@ const config: Config = {
         warning: '#FBBF24',
       },
       fontFamily: {
-        syne: ['var(--font-syne)', 'sans-serif'],
+        outfit: ['var(--font-outfit)', 'sans-serif'],
         mono: ['var(--font-mono)', 'monospace'],
       },
       borderRadius: {

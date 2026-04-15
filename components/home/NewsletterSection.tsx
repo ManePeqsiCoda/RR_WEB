@@ -37,7 +37,7 @@ export default function NewsletterSection() {
 
           {/* Headline */}
           <h2
-            className="font-syne font-bold"
+            className="font-outfit font-bold"
             style={{ fontSize: 'clamp(28px, 4vw, 42px)' }}
           >
             Únete al{' '}
@@ -72,7 +72,7 @@ export default function NewsletterSection() {
             <button
               type="submit"
               className="
-                bg-accent text-bg-primary font-syne font-bold text-xs
+                bg-accent text-bg-primary font-outfit font-bold text-xs
                 tracking-widest uppercase px-6 py-3
                 rounded-l-none rounded-r-button
                 hover:brightness-110 transition-all duration-200

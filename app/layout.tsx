@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Syne, JetBrains_Mono } from 'next/font/google'
+import { Outfit, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/shared/Navbar'
 import Footer from '@/components/shared/Footer'
@@ -8,10 +8,10 @@ import NewsletterPopup from '@/components/shared/NewsletterPopup'
 /* ─────────────────────────────────────────────────────── */
 /* FUENTES                                                */
 /* ─────────────────────────────────────────────────────── */
-const syne = Syne({
+const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-syne',
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-outfit',
   display: 'swap',
 })
 
@@ -75,7 +75,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${syne.variable} ${jetbrainsMono.variable}`}
+      className={`${outfit.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
