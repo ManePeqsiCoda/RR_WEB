@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────── */
+/* RESET & BASE                                           */
+/* ─────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0A0F;
+  color: #E8E6D8;
+  font-family: var(--font-syne), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─────────────────────────────────────────────────────── */
+/* SCROLLBAR PERSONALIZADO                                */
+/* ─────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1A2E;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CFAE3A33;
+}
+
+/* ─────────────────────────────────────────────────────── */
+/* UTILIDADES GLOBALES                                    */
+/* ─────────────────────────────────────────────────────── */
+
+/** Glassmorphism para Navbar, Modals */
+.glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(10, 10, 15, 0.88);
+}
+
+/** Borde dorado sutil para separadores */
+.border-gold {
+  border: 1px solid rgba(207, 174, 58, 0.15);
+}
+
+/** Gradiente de texto dorado */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #CFAE3A 0%, #E8C94A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/** Gradiente de texto eléctrico */
+.text-gradient-electric {
+  background: linear-gradient(135deg, #4A9EFF 0%, #89C4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─────────────────────────────────────────────────────── */
+/* COMPONENTES GLOBALES                                   */
+/* ─────────────────────────────────────────────────────── */
+
+/** Botón CTA Primario */
+.btn-primary {
+  background: #CFAE3A;
+  color: #0A0A0F;
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: filter 200ms ease, transform 150ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/** Botón Secundario (outline) */
+.btn-secondary {
+  background: transparent;
+  color: #E8E6D8;
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: border-color 200ms ease, color 200ms ease, transform 150ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover {
+  border-color: rgba(207, 174, 58, 0.40);
+  color: #CFAE3A;
+  transform: translateY(-1px);
+}
+
+/** Input del formulario */
+.form-input {
+  background: #1A1A2E;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: #E8E6D8;
+  font-family: var(--font-mono), monospace;
+  font-size: 14px;
+  padding: 14px 16px;
+  width: 100%;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #CFAE3A;
+  box-shadow: 0 0 0 3px rgba(207, 174, 58, 0.12);
+}
+
+.form-input::placeholder {
+  color: #5A584A;
+}
+
+/** Card estándar */
+.card {
+  background: #13131F;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 32px;
+  transition: border-color 300ms ease, transform 300ms ease;
+}
+
+.card:hover {
+  border-color: rgba(207, 174, 58, 0.20);
+  transform: translateY(-4px);
+}
+
+/** Badge/pill del ecosistema */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(207, 174, 58, 0.10);
+  color: #CFAE3A;
+  border: 1px solid rgba(207, 174, 58, 0.20);
+  border-radius: 9999px;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+}
+
+/* ─────────────────────────────────────────────────────── */
+/* ANIMACIONES                                            */
+/* ─────────────────────────────────────────────────────── */
+
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes data-tick {
+  0% { transform: scaleY(0.8); }
+  50% { transform: scaleY(1.1); }
+  100% { transform: scaleY(0.8); }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+@keyframes growUp {
+  from { height: 0; opacity: 0; }
+  to   { height: var(--h, 0%); opacity: 1; }
+}
