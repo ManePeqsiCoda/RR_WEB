@@ -25,9 +25,18 @@ export default function NewsletterPopup() {
   })
 
   useEffect(() => {
-    // Check if user already subscribed (don't show again if they did)
+    // Check if user already subscribed
     const hasSubscribed = localStorage.getItem('rr_newsletter_subscribed')
     if (hasSubscribed) return
+
+    // Check if user recently dismissed the modal (less than 7 days ago)
+    const dismissedAt = localStorage.getItem('rr_newsletter_dismissed')
+    if (dismissedAt) {
+      const daysSinceDismissed = (Date.now() - parseInt(dismissedAt)) / (1000 * 60 * 60 * 24)
+      if (daysSinceDismissed < 7) {
+        return // Respetar la decisión del usuario por 7 días
+      }
+    }
 
     // Show after 5 seconds
     const timer = setTimeout(() => {
@@ -39,6 +48,8 @@ export default function NewsletterPopup() {
 
   const closePopup = () => {
     setIsOpen(false)
+    // Cuando el usuario lo cierra explícitamente, guardamos la fecha
+    localStorage.setItem('rr_newsletter_dismissed', Date.now().toString())
   }
 
   const onSubmit = async (data: NewsletterFormData) => {
